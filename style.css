@@ -15,13 +15,13 @@ img {
     height: auto;
 }
 .carousel-inner {
-    max-height: 500px; /* Đặt chiều cao tối đa cho carousel */
+    max-height: 31.25rem; /* Đặt chiều cao tối đa cho carousel */
     overflow: hidden; /* Ẩn phần thừa của hình ảnh */
 }
 
 .carousel-item img {
     width: 100%; /* Chiều rộng hình ảnh chiếm 100% container */
-    height: 500px; /* Đặt chiều cao cố định */
+    height: 31.25rem; /* Đặt chiều cao cố định */
     object-fit: cover; /* Điều chỉnh hình ảnh để bao phủ toàn bộ container */
 }
 
