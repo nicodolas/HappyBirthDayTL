@@ -1,0 +1,138 @@
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel-inner {
+    max-height: 500px; /* Đặt chiều cao tối đa cho carousel */
+    overflow: hidden; /* Ẩn phần thừa của hình ảnh */
+}
+
+.carousel-item img {
+    width: 100%; /* Chiều rộng hình ảnh chiếm 100% container */
+    height: 500px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Điều chỉnh hình ảnh để bao phủ toàn bộ container */
+}
+
+
+.donate-btn {
+    margin-top: 20px;
+}
+
+.modal-body img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    background-image: url('./ịmg/bg.png'); /* Đặt đường dẫn tới hình nền của bạn */
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ trang */
+    background-position: center; /* Căn chỉnh hình nền ở giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-attachment: fixed; /* Giữ hình nền cố định khi cuộn trang */
+    font-family: 'Nunito', sans-serif; /* Sử dụng font bạn đã chọn */
+}
+
+
+
+.birthday-title {
+    font-family: 'Nunito', sans-serif; /* Chọn font chữ bạn thích */
+    font-size: 3rem; /* Kích thước chữ lớn để thu hút sự chú ý */
+    color: #ff69b4; /* Màu sắc tươi sáng, có thể thay đổi tùy theo sở thích */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng cho chữ để tạo chiều sâu */
+    margin-bottom: 20px; /* Khoảng cách dưới chữ */
+    animation: colorChange 5s infinite alternate; /* Hiệu ứng chuyển đổi màu sắc */
+}
+
+/* Hiệu ứng gradient chuyển đổi màu sắc */
+@keyframes colorChange {
+    0% {
+        color: #ff69b4;
+    }
+    25% {
+        color: #ff1493;
+    }
+    50% {
+        color: #ff4500;
+    }
+    75% {
+        color: #ffa500;
+    }
+    100% {
+        color: #ff69b4;
+    }
+}
+
+.birthday-title:before, .birthday-title:after {
+    margin: 0 10px;
+    animation: bounce 1s infinite; /* Hiệu ứng nhún nhảy cho emoji */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/*  */
+.donation-box {
+    border: 2px solid #ffdd57; /* Khung viền vàng nổi bật */
+    border-radius: 15px; /* Góc viền bo tròn */
+    padding: 20px; /* Khoảng cách giữa nội dung và khung viền */
+    background-color: #fff; /* Nền trắng để nội dung nổi bật */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    display: inline-block; /* Khung có kích thước vừa với nội dung */
+    text-align: center; /* Canh giữa nội dung */
+    margin: 20px auto; /* Căn giữa khung trong trang */
+}
+
+.donation-text {
+    font-family: 'Nunito', sans-serif; /* Font chữ hiện đại */
+    font-size: 1.5rem; /* Kích thước chữ vừa phải */
+    color: #49d409; /* Màu chữ đậm, dễ đọc */
+    margin-bottom: 20px; /* Khoảng cách dưới đoạn văn */
+    font-weight: bold;
+}
+
+.btn-donate {
+    background-color: #ffdd57; /* Màu vàng chủ đạo */
+    color: #000; /* Màu chữ đen nổi bật */
+    border: none; /* Xóa bỏ viền nút */
+    font-size: 1.2rem; /* Kích thước chữ lớn hơn một chút */
+    font-weight: bold; /* Chữ đậm để thu hút sự chú ý */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    border-radius: 50px; /* Tạo viền tròn cho nút */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hiệu ứng khi hover */
+}
+
+.btn-donate:hover {
+    background-color: #ffc107; /* Màu sắc thay đổi khi hover */
+    transform: translateY(-2px); /* Nút nhô lên khi hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Tăng cường bóng khi hover */
+}
+
+.btn-donate:active {
+    transform: translateY(0); /* Trạng thái khi nhấn nút */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Giảm bóng khi nút bị nhấn */
+}
+
+
